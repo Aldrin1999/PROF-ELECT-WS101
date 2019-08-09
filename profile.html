@@ -1,33 +1,50 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
-	<title>My Website</title>
-	<link rel="stylesheet" type="text/css" href="style1.css">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Material</title>
+    <!-- Materialize CSS -->
+    <link rel="stylesheet" href="./assets/css/materialize.min.css">
+    <!-- Material Font -->
+    <link rel="stylesheet" href="./assets/css/material-font.css">
+    <!-- Mobile Support -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
 </head>
 <body>
-<div id="container">
-	<div id="header">
-	 <strong>Aldrin John Matayabas</strong><br>
-								
-	</div>
-<div id="nav">
-	<pre><a href="index.html">HOME</a>	<a href="profile.html">PROFILE</a></pre>	<a href="login.html">Login</a> 
-</div>
-<div id="content">
-
-	 </h3>
-	 <br>
-		<center>
-	 	<h1>ABOUT</h1>
-	 	
-		 <p>Name:Aldrin John B. Matayabas <br>
-			Birthday: January 5, 1999 <br>
-			Address: Odiongan Gingoog City <br>
-			Email: Aldrin@gmailcom.
+  <nav>
+    <div class="nav-wrapper">
+      <a href="#" class="brand-logo">Profile</a>
+      <a href="#" data-target="mobile-demo" class="sidenav-trigger"><i class="material-icons">menu</i></a>
+      <ul id="nav-mobile" class="right hide-on-med-and-down">
+        <li><a href="home.html">home</a></li>
+        <li><a href="blog.html">blog</a></li>
+        <li><a href="profile.html">profile</a></li>
+      </ul>
+    </div>
+  </nav>
+  <center>
+    <h1>ABOUT</h1>
+    
+     <p>Name: Aldrin John B. Matayabas <br>
+      Birthday: January 5, 1999 <br>
+      Address: Odiongan Gingoog City <br>
+      Email: Aldrin@gmailcom.
         <br>
-	 	</p>
-	  </center>
-</div>
-	</div>
+    </p>
+    </center>
+  <!-- Material JS -->
+    <script src="./assets/js/materialize.min.js"></script>
+    <script>
+    document.addEventListener('DOMContentLoaded', function() {
+        var elems = document.querySelectorAll('.collapsible');
+        var instances = M.Collapsible.init(elems);
+        var elems = document.querySelectorAll('.scrollspy');
+        var instances = M.ScrollSpy.init(elems);
+        var elems = document.querySelectorAll('.sidenav');
+        var instances = M.Sidenav.init(elems);
+    });
+    </script>
 </body>
 </html>
